@@ -1,3 +1,0 @@
-mv ~/hadoop/hadoop-3.3.2
-hadoop fs -mkdir /holbies
-hadoop fs -mkdir /holbies/input
