@@ -146,6 +146,16 @@ id      company,totalyearlycompensation
 
 Write the script  `reducer.py`  that takes the output of the  `mapper.py`  script and gives the top ten salaries sorted by totalyearlycompensation. The output should be as below. The mapper and reducer should be run on the Hadoop environment with the mapred command.
 
+This command used to start hadoop streaming service
+
+```BASH
+hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-*.jar \
+-file mapper.py -mapper mapper.py \
+-file reducer.py -reducer reducer.py \
+-input /holbies/input/salaries.csv \
+-output /holbies/output/
+```
+
 You have to:
 
 1- Use the put command to upload the  `salaries.csv`  file on the HDFS system on  `/holbies/input`.
