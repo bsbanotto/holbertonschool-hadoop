@@ -14,3 +14,6 @@ def createdir(l):
 
     for created_dir in client.mkdir(l, create_parent=True):
         print(created_dir)
+
+if __name__ == "__main__":
+    createdir(["/holbies/input"])

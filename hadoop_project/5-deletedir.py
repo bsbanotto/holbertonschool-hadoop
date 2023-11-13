@@ -17,3 +17,9 @@ def deletedir(l):
             print(deleted_dir)
     except Exception:
         pass
+
+
+if __name__ == "__main__":
+    deletedir(["/holbies/output"])
+    deletedir(["/holbies/input"])
+
