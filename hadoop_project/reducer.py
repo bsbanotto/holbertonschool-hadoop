@@ -19,13 +19,17 @@ for line in sys.stdin:
         # Build a 10 element long list
         if count < 10:
             top_salaries.append((id, company, Salary))
-            top_salaries = sorted(top_salaries, key=lambda x: x[2], reverse=True)
+            top_salaries = sorted(top_salaries,
+                                  key=lambda x: x[2],
+                                  reverse=True)
             count += 1
 
         # Add new element, sort, pop
         else:
             top_salaries.append((id, company, Salary))
-            top_salaries = sorted(top_salaries, key=lambda x: x[2], reverse=True)
+            top_salaries = sorted(top_salaries,
+                                  key=lambda x: x[2],
+                                  reverse=True)
             top_salaries.pop(10)
 
 # Add new column headers

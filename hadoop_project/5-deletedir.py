@@ -22,4 +22,3 @@ def deletedir(l):
 if __name__ == "__main__":
     deletedir(["/holbies/output"])
     deletedir(["/holbies/input"])
-
